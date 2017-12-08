@@ -59,3 +59,4 @@ function getDataNext() {
 module.exports.getData = getData;
 module.exports.getDataIndex = getDataIndex;
 module.exports.getDataNext = getDataNext;
+module.exports.getDiscoveryData = getDiscoveryData;
