@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column
+}
+
+.itemView {
+  display: flex;
+  flex: 1;
+  height: 60px;
+  flex-direction: row;
+  margin: 10px;
+  border-bottom: 0.5px solid lightgray
+}
+
+.rowItem {
+  display:flex; 
+  flex: 1;
+  flex-direction:row; 
+  justify-content:space-around; 
+  align-items:center;
+}
+
+.avaterView image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.rowRightItem {
+  flex-direction: column;
+  display: flex;
+  margin-left: -25px; 
+}
+
+.rightText {
+  margin-top: -20px;
+  color: gray; 
+  font-size: 14px; 
+}

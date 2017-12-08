@@ -1,0 +1,33 @@
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower">
+  <view class='swiperView'>
+      <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+ <!--列表  -->
+<block wx:for="{{discovery}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+  <view class='itemView' bindtap="bindItemTap">
+    <view class='itemTopView'>
+      <image src='{{item.feed_source_img}}' class='avaterIcon'></image>
+      <text style='width: 300px;align-self: center; font-size:13px;color:lightgray'>{{item.feed_source_name + item.feed_source_txt}}</text>
+      <view class='rightIconView'>
+        <image class="item-more" mode="aspectFit"  src="../../images/more.png"></image>
+      </view>
+    </view>
+    <view class='contentView'>
+      <text>{{item.question}}</text>
+      <text style='font-size: 15px; color: lightgray; padding-right: 20px'>{{item.answer_ctnt}}</text>
+    </view>
+    <view class='bottomView'>
+      <text>{{item.good_num}}人赞同 </text>
+      <text>{{item.comment_num}}评论 </text>
+      <text>关注问题 </text>
+    </view>
+  </view>
+</block>
+</scroll-view>

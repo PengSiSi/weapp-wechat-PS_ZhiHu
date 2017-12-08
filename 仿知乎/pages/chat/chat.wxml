@@ -1,0 +1,40 @@
+<scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+<view class='container'>
+  <view class='itemView'>
+    <view class='avaterView'>
+      <image src="../../images/icon8.jpg"></image>
+    </view>
+    <view class='rowItem'>
+      <view class='rowRightItem'>
+        <text>思思</text>
+        <text style='margin-Top: 5px; color: gray; font-size: 14px;'>你好，你好呀</text>
+      </view>
+      <view><text class='rightText'>三个月前</text></view>
+    </view>
+  </view>
+   <view class='itemView'>
+    <view class='avaterView'>
+      <image src="../../images/icon8.jpg"></image>
+    </view>
+    <view class='rowItem'>
+      <view class='rowRightItem'>
+        <text>思思2</text>
+        <text style='margin-Top: 5px; color: gray; font-size: 14px;'>你好，你好呀</text>
+      </view>
+      <view><text class='rightText'>三个月前</text></view>
+    </view>
+  </view>
+   <view class='itemView'>
+    <view class='avaterView'>
+      <image src="../../images/icon8.jpg"></image>
+    </view>
+    <view class='rowItem'>
+      <view class='rowRightItem'>
+        <text>思思3</text>
+        <text style='margin-Top: 5px; color: gray; font-size: 14px;'>你好，你好呀</text>
+      </view>
+      <view><text class='rightText'>三个月前</text></view>
+    </view>
+  </view>
+</view>
+</scroll-view>

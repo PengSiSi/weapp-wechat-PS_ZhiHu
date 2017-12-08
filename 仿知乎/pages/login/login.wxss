@@ -1,0 +1,36 @@
+/*  */
+
+.container {
+  padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem; 
+  background-color: "white";
+}
+
+.row {
+  display: flex;
+  /* 水平对齐 */
+  align-items: center;  
+  margin-bottom: 0.8rem
+}
+
+.row text {
+  width: 60px;
+}
+
+.row input {
+  width: 200px;
+  font-size: 0.7rem;
+  color: #ccc;
+  flex-grow: 5;
+  border: 1px solid #0099cc;
+  display: inline-block;
+  border-radius: 0.3rem;
+  /* box-shadow: 0 0 0.15rem #aaa; */
+  padding: 0.3rem
+}
+
+.row button {
+  padding: 0 2rem;
+  background-color: #0068C4
+}

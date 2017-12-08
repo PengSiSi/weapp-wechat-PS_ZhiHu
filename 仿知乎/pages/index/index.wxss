@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex: 1;
+}
+
+/*注意，和RN不同，必须声明flex布局  */
+.topView {
+   display: flex;
+   flex: 1; 
+   height: 50px;
+   background-color: #4EA3E7;
+   flex-direction: row; 
+   align-items: center;
+   width: 300px
+}
+
+.searchView {
+  display: flex;
+  align-items: center;
+  /* flex: 1; */
+  margin: 10px;
+  width: 280px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.searchView image {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  align-self: center
+}
+
+.searchView input {
+  align-self: center;
+  margin-left: 10px;
+  height: 30px;
+  width: 260px;
+}
+
+.rightIcon {
+   display: flex; 
+   align-items: center; 
+   margin-right: 10px;
+}
+
+.rightIcon image {
+  width: 20px;
+  height: 20px;
+  align-self: center
+}
+
+/*列表CSS  */
+.itemTopView {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px
+}
+
+.itemView {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid lightgray;
+}
+
+.avaterIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: 10px 5px;
+  /* background-color: green; */
+  align-self: center;
+  /* border-radius: 20px;  */
+}
+
+.rightIconView {
+  display: flex;
+  /* flex: 1; */
+  float: right;
+}
+
+.item-more {
+  width: 30px;
+  height: 30px;
+}
+
+.contentView {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 320px
+}
+
+.bottomView {
+  margin: 10px;
+  font-size: 15px;
+}

@@ -1,0 +1,37 @@
+ <!-- <scroll-view scroll-y="true" class="container" >  -->
+ <!--bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  -->
+<!--搜索框  -->
+<view class='container'>
+   <view class='topView'>
+    <view class='searchView'>
+      <image src="../../images/search.png"></image>
+      <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
+    </view>
+  <!--右边按钮  -->
+    <view class='rightIcon'>
+      <image src="../../images/lighting.png"></image>
+    </view>
+  </view>
+  </view>
+<!--列表  -->
+<block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+  <view class='itemView' bindtap="bindItemTap">
+    <view class='itemTopView'>
+      <image src='{{item.feed_source_img}}' class='avaterIcon'></image>
+      <text style='width: 300px;align-self: center; font-size:13px;color:lightgray'>{{item.feed_source_name + item.feed_source_txt}}</text>
+      <view class='rightIconView'>
+        <image class="item-more" mode="aspectFit"  src="../../images/more.png"></image>
+      </view>
+    </view>
+    <view class='contentView'>
+      <text>{{item.question}}</text>
+      <text style='font-size: 15px; color: lightgray; padding-right: 20px'>{{item.answer_ctnt}}</text>
+    </view>
+    <view class='bottomView'>
+      <text>{{item.good_num}}人赞同 </text>
+      <text>{{item.comment_num}}评论 </text>
+      <text>关注问题 </text>
+    </view>
+  </view>
+</block>
+<!-- </scroll-view>  -->
